@@ -63,6 +63,6 @@ var o = {a:1, b:3};
 add.call(o, 5, 7); // 1 + 3 + 5 + 7 = 16
 add.apply(o, [10, 20]); // 1 + 3 + 10 + 20 = 34
 ```
-    * 当用call和apply而传进去作为this的不是对象时，将会调用内置的ToObject操作转换成对象。所以4将会装换成new Number(4)，而null/undefined由于无法转换成对象，全局对象将作为this。  
-    * call和apply传递的参数，call传递参数a1、a2、a3...形式，apply必须以数组形式  
+* 当用call和apply而传进去作为this的不是对象时，将会调用内置的ToObject操作转换成对象。所以4将会装换成new Number(4)，而null/undefined由于无法转换成对象，全局对象将作为this。  
+* call和apply传递的参数，call传递参数a1、a2、a3...形式，apply必须以数组形式  
 2. f.bind(someObject)会创建新的函数（函数体和作用域与原函数一致），但不会立即执行函数，而是返回一个永久改变this指向的函数。this被永久绑定到someObject，不论你怎么调用。
