@@ -4,7 +4,7 @@
 4. Object.defineProperty无法拦截数组的变化，而proxy可以拦截数组的变化。  
 5. Object.defineProperty直接修改原始数据，proxy返回一个修改后的proxy实例。  
 
-思考：为什么Object.defineProperty无法拦截数组的变化？
+思考：为什么Object.defineProperty无法拦截数组的变化？  
 答：Object.defineProperty() 是用于直接在一个对象上定义一个新属性，或者修改一个对象的现有属性，并返回这个对象。然而，对于数组来说，这个方法并不能拦截数组数据的变化，因为数组在 JavaScript 中是特殊的对象，它们拥有一些特殊的行为。
 当我们使用 Object.defineProperty() 为数组创建一个新属性或修改现有属性时，我们实际上是在操作数组对象的属性，而不是数组的元素。而push、pop、shift等方法操作的是数组的元素而不是数组的属性，因此无法被拦截。例如：
 ```c
