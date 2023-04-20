@@ -1,1 +1,2 @@
-参阅[迭代器与生成器](https://github.com/hyy1115/ES6-learning/blob/master/doc/8%E3%80%81%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3ES6%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%BF%AD%E4%BB%A3%E5%99%A8%EF%BC%88Iterator%EF%BC%89%E5%92%8C%E7%94%9F%E6%88%90%E5%99%A8%EF%BC%88Generator%EF%BC%89.md)
+参阅[迭代器与生成器](https://github.com/hyy1115/ES6-learning/blob/master/doc/8%E3%80%81%E3%80%8A%E6%B7%B1%E5%85%A5%E7%90%86%E8%A7%A3ES6%E3%80%8B%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E8%BF%AD%E4%BB%A3%E5%99%A8%EF%BC%88Iterator%EF%BC%89%E5%92%8C%E7%94%9F%E6%88%90%E5%99%A8%EF%BC%88Generator%EF%BC%89.md)  
+阅读[es6 Generators详解](https://segmentfault.com/a/1190000012358863)
