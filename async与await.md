@@ -5,5 +5,5 @@
 
 * async函数一定会返回一个 promise 对象，async/await 可以和 Promise.all 一起使用，当我们需要同时等待多个 promise 时，我们可以用 Promise.all 把它们包装起来，然后使用 await，如果出现 error，也会正常传递，从失败了的 promise 传到 Promise.all，然后变成我们能通过使用 try..catch 在调用周围捕获到的异常。
 
-参考[javascript.info](https://zh.javascript.info/async-await)  
+参考[异步神奇async-await](https://segmentfault.com/a/1190000011526612)  
 参考[MDN](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Statements/async_function#%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B)
