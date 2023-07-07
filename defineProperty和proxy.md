@@ -20,4 +20,4 @@ Object.defineProperty(arr, '0', {
 arr[0] = 42; // 这行代码不会产生任何输出，因为数组的索引访问并不会触发我们定义的 setter
 ```
 
-认真阅读[defineProperty与proxy](https://github.com/mqyqingfeng/Blog/issues/107)
+参考[defineProperty与proxy](https://github.com/mqyqingfeng/Blog/issues/107)
