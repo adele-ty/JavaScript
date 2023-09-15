@@ -1,7 +1,7 @@
 this的上下文基于函数调用的情况。和函数在哪定义无关，和函数怎么调用有关。
-### 全局上下文
+# 全局上下文
 在全局上下文（任何函数以外），this指向全局对象。
-### 函数上下文
+# 函数上下文
 在函数内部时，this由函数怎么调用来确定。  
 1. 简单调用  
 由于this没有通过call来指定，且this必须指向对象，那么默认就指向全局对象。
@@ -51,7 +51,7 @@ console.log(o.f()); // 37
 ```
 4. 构造函数。this指向构造的实例  
 5. DOM事件监听器。this自动设置为触发事件的dom元素。
-### 改变this指向
+# 改变this指向
 1. call和apply  
 Function.prototype上的call和apply可以指定函数运行时的this，并且立即执行函数。
 ```c
@@ -65,4 +65,5 @@ add.apply(o, [10, 20]); // 1 + 3 + 10 + 20 = 34
 ```
 * 当用call和apply而传进去作为this的不是对象时，将会调用内置的ToObject操作转换成对象。所以4将会装换成new Number(4)，而null/undefined由于无法转换成对象，全局对象将作为this。  
 * call和apply传递的参数，call传递参数a1、a2、a3...形式，apply必须以数组形式  
+* call性能更好，少了将apply第二个参数解构的过程  
 2. f.bind(someObject)会创建新的函数（函数体和作用域与原函数一致），但不会立即执行函数，而是返回一个永久改变this指向的函数。this被永久绑定到someObject，不论你怎么调用。
